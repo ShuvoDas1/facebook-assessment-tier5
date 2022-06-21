@@ -1,0 +1,55 @@
+@import '../../scss/base';
+
+.post__actions {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 15px;
+    display: flex;
+    margin: 10px 0px;
+    justify-content: space-around;
+    .item {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+    }
+}
+
+.comments {
+    .comment {
+        display: flex;
+
+        &__info {
+            background-color: #f5f5f5;
+            padding: 7px 15px;
+            margin-left: 5px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.new__comment__wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    .new__comment__input {
+        flex: 1;
+        background-color: #f5f5f5;
+        padding: 10px;
+        border-radius: 20px;
+        display: flex;
+
+        .input {
+            width: 100%;
+            outline: none;
+            border: none;
+            background: none;
+            resize: vertical;
+            min-height: 15px;
+        }
+
+        .new__comment__options {
+            width: 120px;
+        }
+    }
+}

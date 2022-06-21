@@ -1,0 +1,86 @@
+@import "../../scss/base";
+
+.app__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        flex: 1;
+       
+        @media (max-width: $medium_device) {
+            justify-content: space-between;
+           flex: 2
+        }
+        .search__wrapper {
+            border: 1px solid lightgrey;
+            border-radius: 25px;
+            margin-left: 10px;
+            align-items: center;
+            padding: 3px 15px;
+            display: flex;
+            align-items: center;
+
+            @media (max-width: $medium_device) {
+                flex: 2
+             }
+
+            .input {
+                padding-left: 10px;
+                border: none;
+                background: none;
+                color: white !important;
+                &::placeholder {
+                    color: white !important;
+                    opacity: 1;
+                }
+                &:focus {
+                    outline: none !important;
+                }
+            }
+        }
+    }
+
+    .middle {
+        flex: 2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @media (max-width: $medium_device) {
+            display: none;
+        }
+
+        .option {
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
+    }
+
+    .right {
+        flex: 1;
+        @media (max-width: $medium_device) {
+           width: 50px;
+           flex:none;
+        }
+        .user {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: $medium_device) {
+                display: none;
+            }
+        }
+
+        .menu{
+            display: none;
+           
+            @media (max-width: $medium_device) {
+                display: block;
+                text-align: right;
+            }
+        }
+    }
+}

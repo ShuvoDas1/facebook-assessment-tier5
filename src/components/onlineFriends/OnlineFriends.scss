@@ -1,0 +1,32 @@
+@import "../../scss/base";
+
+
+.container {
+    position: sticky;
+    top: 80px;
+    .online__users__wrapper{
+        padding-left: 40px;
+        @media(max-width: $medium_device){
+            padding-left: 0px;
+        } 
+        .active__user {
+            // margin-left: 40px !important;
+            padding: 5px;
+            .active__user__avatar {
+                position: relative;
+                margin-right: 5px;
+                .active__icon {
+                    position: absolute;
+                    background-color: green;
+                    border-radius: 50%;
+                    width: 10px;
+                    height: 10px;
+                    left: 35px;
+                    bottom: 4px;
+                }
+            }
+        }
+
+    }
+    
+}
